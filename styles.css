@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+:root {
+    --primary-color: #004DF9;
+    --secondary-color: #111111;
+}
+
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.7rem;
+    margin-bottom: 40px;
+}
+
+p {
+    font-weight: inherit;
+    color: white;
+    font-size: 1.3rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+main {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+/* Media */
+
+.medias {
+    flex: 2;
+}
+
+.media-list {
+    box-sizing: border-box;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    max-width: var(--max-width);
+    margin: 0;
+    padding: 0;
+}
+
+.media-list-item {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 3px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+}
+
+.media-list-item:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+/* Profile */
+
+.profile {
+    flex: 3;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.profile img {
+    width: 130px;
+    border-radius: 50%;
+}
+
+.line {
+    position: absolute;
+    bottom: 30px;
+    height: 20px;
+    width: 40vw;
+    left: 0;
+    background-color: var(--primary-color);
+}
+
+
+/* Nav */
+
+nav {
+    position: fixed;
+    left: 40px;
+    color: white;
+}
+
+nav span {
+    color: var(--primary-color);
+}

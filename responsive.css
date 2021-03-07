@@ -1,0 +1,46 @@
+@media screen and (max-width: 960px) {
+    .profile {
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    main {
+        flex-direction: column;
+    }
+    .profile,
+    .medias {
+        flex: initial;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    nav {
+        position: absolute;
+        top: 0;
+        left: 15px;
+    }
+    main {
+        justify-content: initial;
+        margin-top: 70px;
+    }
+    .media-list {
+        grid-template-columns: repeat(2, 1fr);
+        box-sizing: border-box;
+    }
+    .line {
+        display: none;
+    }
+    .profile p {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .media-list {
+        grid-template-columns: auto;
+    }
+    .media-list-item {
+        width: 95vw;
+    }
+}
